@@ -12,7 +12,7 @@ void push(StackPtr s, char value)
 {
 NodePtr new_node=(NodePtr)malloc(sizeof(Node));
   if(new_node){
-    value = new_node->data;
+    new_node->data = value;
     new_node->nextPtr=s->top;
     s->top=new_node;
     s->size=s->size+1;
