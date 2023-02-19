@@ -39,6 +39,9 @@ int main(int argc, char **argv){
             {
                Error=1;
                
+            }else {
+               Error=0;
+               
             }
             break;
             case ']':
@@ -46,6 +49,9 @@ int main(int argc, char **argv){
             if(pop(&s)!='[')
             {
                Error=1;
+               
+            }else{
+               Error=0;
                
             }
             break;
